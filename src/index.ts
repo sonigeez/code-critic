@@ -15,7 +15,7 @@ const openai = new OpenAI({
   baseURL: process.env.OPENAI_BASE_URL
 });
 
-const BASE_URL = process.env.BASE_URL
+const BASE_URL = process.env.LAMBDA_BASE_URL
 
 async function processPullRequest(owner: string, repo: string, commit: string): Promise<string> {
   try {
